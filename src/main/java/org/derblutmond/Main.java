@@ -13,7 +13,7 @@ public class Main {
 
         ConsoleLogger console = new ConsoleLogger(Main.class);
         SocketClient socket = new SocketClient("http://localhost:8086/");
-        socket.addNamespace("microsip", false);
+         socket.addNamespace("microsip", false);
         Integer socketSize = socket.socketMap.size();
         Integer socketConnected = 0;
         socket.connect();
